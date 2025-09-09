@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft DRC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <h1>Soft DRC</h1>
+
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="scanBtn">?? Scanner le texte</button>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p>Extraction du texte en cours...</p>
+  </div>
+
+  <h2>?? Texte détecté :</h2>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
