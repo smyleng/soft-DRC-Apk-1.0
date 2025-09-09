@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <h1>Soft DRC</h1>
 
   <input type="file" id="imageInput" accept="image/*">
-  <button id="scanBtn">?? Scanner le texte</button>
+  <button id="scanBtn">📷 Scanner le texte</button>
 
   <div id="loading">
     <div class="spinner"></div>
@@ -21,8 +21,19 @@
     <p>Extraction du texte en cours...</p>
   </div>
 
-  <h2>?? Texte d�tect� :</h2>
+  <h2>📝 Texte détecté :</h2>
   <pre id="output"></pre>
+
+  <!-- Boutons Copier et Partager -->
+  <div id="actionButtons">
+    <button class="action-btn" onclick="copyText()">📋 Copier</button>
+    <button class="action-btn" onclick="shareText()">📤 Partager</button>
+  </div>
+
+  <!-- Bannière bas de page -->
+  <footer>
+    Soft DRC - Self made by X
+  </footer>
 
   <script src="script.js"></script>
 </body>
